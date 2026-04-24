@@ -1,6 +1,11 @@
-[package]
-name = "axo"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members=[
+    "axo_core",
+    "axo_client"
+]
+resolver="3"
 
-[dependencies]
+[workspace.package]
+version = "0.1.0"
+authors = ["Abhijeet Gautam"]
+description = "A single-node, high performance message broker based on Kafka's storage architecture"
